@@ -29,6 +29,7 @@ function! s:Pandoc.generate(theme, restart) abort
           \ '-f', input_format,
           \ input_path,
           \ '-o', s:output_path,
+          \ '--filter=pandoc-xnos',
           \ '--standalone',
           \ '-t', 'html',
           \ '--katex',
