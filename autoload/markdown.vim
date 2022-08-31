@@ -33,6 +33,7 @@ function! s:Pandoc.generate(theme, restart) abort
           \ '--standalone',
           \ '-t', 'html',
           \ '--katex',
+          \ '--citeproc',
           \ '--highlight-style='.l:highlight,
           \ '--metadata',
           \ 'pagetitle='.filename,
