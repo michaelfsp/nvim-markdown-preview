@@ -34,6 +34,7 @@ function! s:Pandoc.generate(theme, restart) abort
           \ '-t', 'html',
           \ '--katex',
           \ '--citeproc',
+          \ '--number-sections',
           \ '--highlight-style='.l:highlight,
           \ '--metadata',
           \ 'pagetitle='.filename,
